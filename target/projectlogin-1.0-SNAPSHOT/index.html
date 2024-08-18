@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style> 
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #222;
+                color: #fff;
+                padding-top: 2rem;
+            }
+            .form{
+                display: flex;
+                   flex-direction: column;
+                   row-gap: 30px;
+                   width: min(80%, 320px); 
+                   margin: 0 auto;
+                   padding: 3rem;
+                   border: 4px outset white;
+                   border-radius: 12px;
+            }
+            .fieldset{
+                padding: 0;
+                margin: 0 0 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: none;
+                row-gap: 20px;
+            }
+            .legend{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 1.3rem;
+            }
+            .title{
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+            .input{
+                padding: 15px 20px;
+                border-radius: 10px;
+                width: 100%; 
+                font-size: 1.2rem;
+            }
+            .btn{
+                padding: 15px 25px;
+                border-radius: 22px;
+                background-color: #3bc6b4;
+                font-size: 1rem;
+                font-weight: bolder;
+                color: #fff;
+                border: none;
+                margin-top: 2rem;
+            }
+            .btn:hover{
+                cursor: pointer;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <h1 class="title">Login form</h1>
+        <form 
+            action="login" 
+            method="post"
+            class="form"
+            >
+            <fieldset class="fieldset">
+                <legend class="legend">Credentials</legend>
+                <input class="input" type="text" name="user">
+                <input class="input" type="password" name="password">
+                <input class="btn" type="submit" value="Login">
+            </fieldset>
+        </form>
+    </body>
+</html>
